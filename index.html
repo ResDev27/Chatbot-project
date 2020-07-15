@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Chatbot</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Resa Quinta">
+	<title>BeChatBot</title>
+    <meta name="project decription" content="ChatBot exercice">
+	<link rel="stylesheet" href="./style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="main">
-	<div>user: <span id="user"></span></div>
-	<div>chatbot: <span id="chatbot"></span></div>
-	<div><input id="input" type="text" placeholder="say anything..." autocomplete="off"/></div>
-</div>
-<script src="./script.js"></script>
+	<section class="flex">
+		<section>
+			<h1><a>be&lt;&sol;</a>ChatBot</h1>
+		</section>
+		<section class="result"></section>
+		<section class="input">
+			<input type="text" id="ans"
+			placeholder="Enter your response" required/>
+		</section>
+	</section>
+
 </body>
 </html>
