@@ -15,38 +15,43 @@ let counter = 0;
 
 document.addEventListener("keypress", function(event){
 if (event.keyCode === 13) {
-// getting answer from user 
-
-let answer = document.getElementById("ans").value;
-
-// Process the user's response 
-
-if (answer.includes("yes")) {
-   let positiveFeelings = ["Happy to hear that! See ya!", "Sounds Good, Greetings!", "Alright! Bye bye!"];
-   const randompositiveFeelings = positiveFeelings[Math.floor(Math.random() * positiveFeelings.length)];
-   document.getElementById("question").innerHTML = randompositiveFeelings;
-} else if (answer.includes("no")) {
-   let negativeFeelings = ["Sorry to hear that! Take good care of yourself!", "I hope you will be ok again soon... See you around!", "That's unfortunate... Take care!"];
-   const randomnegativeFeelings = negativeFeelings[Math.floor(Math.random() * negativeFeelings.length)];
-   document.getElementById("question").innerHTML = randomnegativeFeelings;
-} else {
-   counter++;
-   console.log(counter);
-   let otherAnswer = ["Can you clearly answer to my question please ?", "It's either 'yes or no'!", "Am I a joke to you ???"];
-   const randomotherAnswer = otherAnswer[Math.floor(Math.random() * otherAnswer.length)];
-   document.getElementById("question").innerHTML = randomotherAnswer;
+execution();
 }
+})
 
-// if the answer is not yes or no 3 times, do this:
-if (counter === 3) {
-document.getElementById("question").innerHTML = "Fuck off!";
-document.getElementById("ans").setAttribute("disabled", "disabled");
-document.getElementById("ans").setAttribute("placeholder", "you are muted, dumbass!")
-}
-// clear the input field
-document.getElementById("ans").value = "";
-}
+document.getElementById("submit").addEventListener("click", execution)
 
-   })
+function execution() {
+   // getting answer from user 
+   let answer = document.getElementById("ans").value;
+
+   // Process the user's response 
+   
+   if (answer.includes("yes")) {
+      let positiveFeelings = ["Happy to hear that! See ya!", "Sounds Good, Greetings!", "Alright! Bye bye!"];
+      const randompositiveFeelings = positiveFeelings[Math.floor(Math.random() * positiveFeelings.length)];
+      document.getElementById("question").innerHTML = randompositiveFeelings;
+   } else if (answer.includes("no")) {
+      let negativeFeelings = ["Sorry to hear that! Take good care of yourself!", "I hope you will be ok again soon... See you around!", "That's unfortunate... Take care!"];
+      const randomnegativeFeelings = negativeFeelings[Math.floor(Math.random() * negativeFeelings.length)];
+      document.getElementById("question").innerHTML = randomnegativeFeelings;
+   } else {
+      counter++;
+      console.log(counter);
+      let otherAnswer = ["Can you clearly answer to my question please ?", "It's either 'yes or no'!", "Am I a joke to you ???"];
+      const randomotherAnswer = otherAnswer[Math.floor(Math.random() * otherAnswer.length)];
+      document.getElementById("question").innerHTML = randomotherAnswer;
+   }
+   
+   // if the answer is not yes or no 3 times, do this:
+   if (counter === 3) {
+   document.getElementById("question").innerHTML = "Fuck off!";
+   document.getElementById("ans").setAttribute("disabled", "disabled");
+   document.getElementById("ans").setAttribute("placeholder", "you are muted, dumbass!")
+   }
+   // clear the input field
+   document.getElementById("ans").value = "";
+   }
+
 
 
