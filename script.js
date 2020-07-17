@@ -1,13 +1,30 @@
 
 //this bit its the greeting message from bot
-let greetings = ["Yo!", "What's Up !", "How you doin'!"];
+
+let greetings = ["Hi there, what is your name?", "Oh hello, what should i call you?", "Hello you, what's your name?"];
 const randomgreetings = greetings[Math.floor(Math.random() * greetings.length)];
 document.getElementById("question").innerHTML = randomgreetings;
+
+
+//This bit takes the inputed name and customise the answer
+
+function naming () {
+   let answer = document.getElementById("ans").value;
+   document.addEventListener("keypress", function(event){
+      if (event.keyCode === 13) {
+      execution();
+      }
+      })
+   let personalGreeting = [`Hello ${answer}, nice to meet you`, `Hey ${answer}, its a pleasure to meet you`, `Howdy ${answer}, i'm a beBot`];
+   const randomPersonal = personalGreeting[Math.floor(Math.random() * personalGreeting.length)];
+   document.getElementById("question").innerHTML = randomPersonal;
+}
+
 
 // this bit it's the question from bot "required yes or no answer" 
 setTimeout(function(){ 
    document.getElementById("question").innerHTML = "Are you feeling alright ?"; 
-}, 2000);
+}, 5000);
 
 let counter = 0;
 
