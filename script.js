@@ -28,11 +28,11 @@ function execution() {
 
    // Process the user's response 
    
-   if (answer.includes("yes")) {
+   if (answer.toLowerCase().includes("yes")) {
       let positiveFeelings = ["Happy to hear that! See ya!", "Sounds Good, Greetings!", "Alright! Bye bye!"];
       const randompositiveFeelings = positiveFeelings[Math.floor(Math.random() * positiveFeelings.length)];
       document.getElementById("question").innerHTML = randompositiveFeelings;
-   } else if (answer.includes("no")) {
+   } else if (answer.toLowerCase().includes("no")) {
       let negativeFeelings = ["Sorry to hear that! Take good care of yourself!", "I hope you will be ok again soon... See you around!", "That's unfortunate... Take care!"];
       const randomnegativeFeelings = negativeFeelings[Math.floor(Math.random() * negativeFeelings.length)];
       document.getElementById("question").innerHTML = randomnegativeFeelings;
