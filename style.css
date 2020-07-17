@@ -10,7 +10,7 @@ a {
     font-size: 40px;
 }
 
-h1 {
+h2 {
 font-size: 40px;
 font-weight: 600;
 border: 3px solid #ffffff;
@@ -26,6 +26,11 @@ margin-bottom: 40px;
     height: 100vh;
 }
 
+.question {
+    font-size: 40px;
+    font-weight: 600;
+}
+
 #result {
     font-size: 36px;
     color: #16232E;
@@ -37,8 +42,9 @@ margin-bottom: 40px;
     padding-left: 20px;
     padding-right: 30px;
     font-size: 26px;
-    background: transparent;
+    background: #2c3e4d;
     border: 0;
+    border-radius: 16px;
 }
 
 #ans:focus {
