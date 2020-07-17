@@ -74,17 +74,13 @@ At the end of this challenge you should have improved your:
 
 ## Github Page for Source Code
 
-# **The Mission**  
+https://github.com/ResDev27/Chatbot-project
 
-- Firsty, we worked on a simple page in HTML.  
+## Live Link to the ChatBot
+https://resdev27.github.io/Chatbot-project/.
 
-    - You can see on this picture the first model of the bot :robot:
-    -   ![Capture d’écran de 2020-07-15 15-50-01](https://user-images.githubusercontent.com/62213192/87776480-1ed8e780-c828-11ea-81c0-0d0c39a33005.jpg)
-        You can see on the right side of the picture the structure of the html, it's pretty simple.
+## LightHouse Test Results
 
-We were not sure of the color we wanted to use. We decided that we wanted the page to be as simple as possible. So we finaly came up with the idea to use the theme of BeCode : dark blue & white.
-    - 
 
-Once the theme was set up, we decided to begin our JavaScript. It was by far the hardest part... We searched so much on the internet to find a template or a tutorial that will help us to start the project.  
 
-We finally decided to work as a team and start from scratch. And we are happy with the results that correspond exactly to the requirements. 
+
