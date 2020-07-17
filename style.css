@@ -31,7 +31,10 @@ margin-bottom: 40px;
     font-weight: 600;
 }
 
-.sub-button {
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
