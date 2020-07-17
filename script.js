@@ -45,7 +45,7 @@ function execution() {
    }
    
    // if the answer is not yes or no 3 times, do this:
-   if (counter === 3) {
+   if (counter >= 3) {
       document.getElementById("question").innerHTML = "Fuck off!";
       document.getElementById("ans").value = "";
       document.getElementById("ans").setAttribute("disabled", "disabled");
