@@ -31,6 +31,10 @@ margin-bottom: 40px;
     font-weight: 600;
 }
 
+.sub-button {
+    flex-direction: column;
+}
+
 #result {
     font-size: 36px;
     color: #16232E;
