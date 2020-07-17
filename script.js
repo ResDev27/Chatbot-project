@@ -1,33 +1,52 @@
 
 //this bit its the greeting message from bot
-let greetings = ["Yo!", "What's Up !", "How you doin'!"];
+
+let greetings = ["Hi there, what is your name?", "Oh hello, what should i call you?", "Hello you, what's your name?"];
 const randomgreetings = greetings[Math.floor(Math.random() * greetings.length)];
 document.getElementById("question").innerHTML = randomgreetings;
 
+
+//This bit takes the inputed name and customise the answer
+
 // this bit it's the question from bot "required yes or no answer" 
-setTimeout(function(){ 
-   document.getElementById("question").innerHTML = "Are you feeling alright ?"; 
-}, 2000);
 
 let counter = 0;
 
 // Enter execution
 
-document.addEventListener("keypress", function(event){
-if (event.keyCode === 13) {
-execution();
-}
+document.addEventListener("keypress", function (event) {
+   if (event.keyCode === 13) {
+      // get value from input
+      let answer = document.getElementById('ans').value;
+      if (answer) {
+         let personalGreeting = [`Hello ${answer}, nice to meet you`, `Hey ${answer}, its a pleasure to meet you`, `Howdy ${answer}, i'm a beBot`];
+         const randomPersonal = personalGreeting[Math.floor(Math.random() * personalGreeting.length)];
+         document.getElementById("question").innerHTML = randomPersonal;
+
+         document.getElementById("ans").value = "";
+      }
+
+
+
+   }
 })
+
+
+
+
+
+
+
 // Submit button execution
 document.getElementById("submit").addEventListener("click", execution)
 
 // main FUNCTION
 function execution() {
+   document.getElementById("question").innerHTML = `Are you feeling alright ? `;
    // getting answer from user 
    let answer = document.getElementById("ans").value;
-
    // Process the user's response 
-   
+
    if (answer.includes("yes")) {
       let positiveFeelings = ["Happy to hear that! See ya!", "Sounds Good, Greetings!", "Alright! Bye bye!"];
       const randompositiveFeelings = positiveFeelings[Math.floor(Math.random() * positiveFeelings.length)];
@@ -43,7 +62,7 @@ function execution() {
       const randomotherAnswer = otherAnswer[Math.floor(Math.random() * otherAnswer.length)];
       document.getElementById("question").innerHTML = randomotherAnswer;
    }
-   
+
    // if the answer is not yes or no 3 times, do this:
    if (counter === 3) {
       document.getElementById("question").innerHTML = "Fuck off!";
@@ -58,7 +77,7 @@ function execution() {
    document.getElementById("ans").value = "";
 
 
-   }
+}
 
 
 
