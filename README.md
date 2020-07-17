@@ -28,4 +28,14 @@ We had to distibute the tasks between us. That part wasn't easy because we didn'
 - Firsty, we worked on a simple page in HTML.  
 
     - You can see on this picture the first form on the bot :robot:
-    -   [image1]("assets/img/Capture d’écran de 2020-07-15 15-50-01.jpg")
+    -   ![Capture d’écran de 2020-07-15 15-50-01](https://user-images.githubusercontent.com/62213192/87776480-1ed8e780-c828-11ea-81c0-0d0c39a33005.jpg)
+        You can se on the right side of the picture the structure of the html, it's simple.
+
+We wasn't sure of the color we wanted to use. We decided that we wanted the page to be as simple as possible. So we finnaly came up with the idea to use the theme of BeCode : a dark blue and white.
+    - 
+
+Once the theme was set up, we decide to begin our script. It was by far the hardest part... We searched so much on the net to find a tameplate or a tutorial that will help us to be stat the writting of the project.  
+
+We decided to work each on our own... Its was such a waste of time. Resa suggested to start our own script and not take a already made one.  
+
+After these few moments of bewilderment we finally beginned to write our it and it was hard but we finally succeded to do it 
