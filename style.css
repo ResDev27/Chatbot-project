@@ -15,7 +15,7 @@ font-size: 40px;
 font-weight: 600;
 border: 3px solid #ffffff;
 padding: 2px 60px 5px;
-margin-bottom: 40px;
+margin-bottom: 10px;
 }
 
 .flex {
@@ -38,6 +38,19 @@ margin-bottom: 40px;
     flex-direction: column;
 }
 
+button {
+    border: transparent;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 24px;
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 0 0 0 3px black;
+}
+
 #result {
     font-size: 36px;
     color: #16232E;
@@ -45,9 +58,11 @@ margin-bottom: 40px;
 
 #ans {
     color: #ffffff;
-    padding: 20px;
-    padding-left: 20px;
-    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
     font-size: 26px;
     background: #2c3e4d;
     border: 0;
