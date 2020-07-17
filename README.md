@@ -1,3 +1,6 @@
+# **Chatbot-project**
+
+
 - Type of challenge: **Consolidation of Javascript skills**  
 - Duration : **3 days**  
 - Deadline: **17/07/20 H:17PM**
@@ -8,7 +11,6 @@
     - backend: **1 or 2**
     - project management : **1**
 
-# **Chatbot-project**
 
 Welcome to our **be&lt;&sol;</a>Bot&gt;** project!
 
