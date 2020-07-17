@@ -26,4 +26,4 @@ We had to distibute the tasks between us. That part wasn't easy because we didn'
 - Firsty, we worked on a simple page in HTML.  
 
     - You can see on this picture the first form on the bot :robot:
-    -   
+    -   [image1]("assets/img/Capture d’écran de 2020-07-15 15-50-01.jpg")

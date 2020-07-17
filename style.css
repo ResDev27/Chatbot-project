@@ -26,6 +26,11 @@ margin-bottom: 40px;
     height: 100vh;
 }
 
+.question {
+    font-size: 40px;
+    font-weight: 600;
+}
+
 #result {
     font-size: 36px;
     color: #16232E;
