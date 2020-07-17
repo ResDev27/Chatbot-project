@@ -1,3 +1,10 @@
+Type of challenge: **Consolidation**  
+Duration : **3 days**  
+Team challenge: **In groups of three**
+- frontend: **1 or 2**
+- backend: **1 or 2**
+- project management : **1**
+
 # Chatbot-project
 
 Welcome to our be</Chatbot project
@@ -6,9 +13,7 @@ Welcome to our be</Chatbot project
 | :-----: | :-----: | :-----: |
 | Lap | Resa | Laurent |
 
-We worked a bit on every aspect of the project.
-
-Firsty Resa did the design of the "bot", the idea was to adapt the color theme of the BeCode organisation.   
+We worked all worked a bit on every aspect of the project.
 
 She begun firstly to wrote the html page of the bot. 
 

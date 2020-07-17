@@ -11,16 +11,17 @@ setTimeout(function(){
 
 let counter = 0;
 
-//Submit button 
+// Enter execution
 
 document.addEventListener("keypress", function(event){
 if (event.keyCode === 13) {
 execution();
 }
 })
-
+// Submit button execution
 document.getElementById("submit").addEventListener("click", execution)
 
+// main FUNCTION
 function execution() {
    // getting answer from user 
    let answer = document.getElementById("ans").value;
@@ -45,12 +46,18 @@ function execution() {
    
    // if the answer is not yes or no 3 times, do this:
    if (counter === 3) {
-   document.getElementById("question").innerHTML = "Fuck off!";
-   document.getElementById("ans").setAttribute("disabled", "disabled");
-   document.getElementById("ans").setAttribute("placeholder", "you are muted, dumbass!")
+      document.getElementById("question").innerHTML = "Fuck off!";
+      document.getElementById("ans").value = "";
+      document.getElementById("ans").setAttribute("disabled", "disabled");
+      document.getElementById("ans").setAttribute("placeholder", "you are muted, dumbass!");
+      document.removeEventListener("keypress");
+      document.getElementById("submit").disabled = true;
+
    }
    // clear the input field
    document.getElementById("ans").value = "";
+
+
    }
 
 
