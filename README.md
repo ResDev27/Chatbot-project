@@ -6,8 +6,7 @@
 - Type of Challenge:  `Consolidation`
 - Duration: `3 days`
 - Deadline: `17/07/20 H:17PM`
-- Deployment strategy :
-  - Github page
+- Deployment strategy : Planning - Flowchart - HTML/CSS Basic - JavaScript Basic - HTML/CSS Final - JavaScript Final - Small Improvements
 - Team challenge : Resa Quinta, Lap Hoang, Laurent A. Lonchay
   - frontend: 1 or 2
   - backend: 1 or 2
@@ -44,15 +43,6 @@ At the end of this challenge you should have improved your:
 - support _multi-line_ messages: by typing `SHIFT+ENTER`, you create a new line in the textarea.
 - add "in progress" animation and timeout to simulate "bot thinking"
 - You can try to make the bot more "real" by having more possible answers to interact with the user.
-
-## Deliverables
-
-1. Publish your source code on the GitHub repository.
-2. Pimp up the readme file:
-   - What, Why, When, How, Who.
-   - Pending things to do
-   - It must contain a link to the "live" version. The "live" version must contain a link to the source code on GitHub.
-3. Publish the link to the "live" version on Discord.
 
 ### Steps
 
