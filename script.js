@@ -6,43 +6,70 @@ const randomgreetings = greetings[Math.floor(Math.random() * greetings.length)];
 document.getElementById("question").innerHTML = randomgreetings;
 
 
-//This bit takes the inputed name and customise the answer
-
-// this bit it's the question from bot "required yes or no answer" 
-
-let counter = 0;
+// declare counters
+let muteCounter = 0;
+let questionCounter = 0;
 
 // Enter execution
 
-document.addEventListener("keypress", function (event) {
-   if (event.keyCode === 13) {
-      // get value from input
-      let answer = document.getElementById('ans').value;
-      if (answer) {
-         let personalGreeting = [`Hello ${answer}, nice to meet you`, `Hey ${answer}, its a pleasure to meet you`, `Howdy ${answer}, i'm a beBot`];
-         const randomPersonal = personalGreeting[Math.floor(Math.random() * personalGreeting.length)];
-         document.getElementById("question").innerHTML = randomPersonal;
+document.addEventListener("keypress", exec)
 
-         document.getElementById("ans").value = "";
+function exec(event) {
+   if (event.keyCode === 13) {
+      // increment questionCounter
+      questionCounter++;
+      // this condition applies quen answering the greetings
+      if(questionCounter === 1) {
+         // get value from input
+      let answer = document.getElementById('ans').value;
+      let personalGreeting = [`Hello ${answer}, nice to meet you`, `Hey ${answer}, its a pleasure to meet you`, `Howdy ${answer}, i'm a beBot`];
+      const randomPersonal = personalGreeting[Math.floor(Math.random() * personalGreeting.length)];
+      document.getElementById("question").innerHTML = randomPersonal; // display input
+         //  after 2 seconds askFeeling
+      setTimeout(askFeeling, 2000);
+
+      document.getElementById("ans").value = "";
+
+
+      } else if (questionCounter > 1) { // after the first greeting question
+         execution();
       }
 
-
-
+      function askFeeling() {
+         document.getElementById('question').innerHTML = 'Are you feeling OK?';
+      }
+   
    }
-})
 
-
-
-
-
+}
 
 
 // Submit button execution
-document.getElementById("submit").addEventListener("click", execution)
+
+document.getElementById("submit").addEventListener("click", function() {
+   questionCounter++;
+
+      if(questionCounter === 1) {
+
+      let answer = document.getElementById('ans').value;
+      let personalGreeting = [`Hello ${answer}, nice to meet you`, `Hey ${answer}, its a pleasure to meet you`, `Howdy ${answer}, i'm a beBot`];
+      const randomPersonal = personalGreeting[Math.floor(Math.random() * personalGreeting.length)];
+      document.getElementById("question").innerHTML = randomPersonal;
+
+      setTimeout(askFeeling, 2000);
+
+      document.getElementById("ans").value = "";
+      } else if (questionCounter > 1) {
+         execution();
+      }
+
+      function askFeeling() {
+         document.getElementById('question').innerHTML = 'Are you feeling OK?';
+      }
+})
 
 // main FUNCTION
 function execution() {
-   document.getElementById("question").innerHTML = `Are you feeling alright ? `;
    // getting answer from user 
    let answer = document.getElementById("ans").value;
    // Process the user's response 
@@ -75,8 +102,6 @@ function execution() {
    }
    // clear the input field
    document.getElementById("ans").value = "";
-
-
 }
 
 
