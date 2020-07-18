@@ -1,4 +1,3 @@
-
 //this bit its the greeting message from bot
 
 let greetings = ["Hi there, what is your name?", "Oh hello, what should i call you?", "Hello you, what's your name?"];
@@ -9,6 +8,7 @@ document.getElementById("question").innerHTML = randomgreetings;
 // declare counters
 let muteCounter = 0;
 let questionCounter = 0;
+let answerPosibilities = 0;
 
 // Enter execution
 
@@ -26,7 +26,7 @@ function exec(event) {
       const randomPersonal = personalGreeting[Math.floor(Math.random() * personalGreeting.length)];
       document.getElementById("question").innerHTML = randomPersonal; // display input
          //  after 2 seconds askFeeling
-      setTimeout(askFeeling, 2000);
+      setTimeout(askFeeling, 3000);
 
       document.getElementById("ans").value = "";
 
@@ -76,31 +76,49 @@ function execution() {
       let positiveFeelings = ["Happy to hear that! See ya!", "Sounds Good, Greetings!", "Alright! Bye bye!"];
       const randompositiveFeelings = positiveFeelings[Math.floor(Math.random() * positiveFeelings.length)];
       document.getElementById("question").innerHTML = randompositiveFeelings;
+      muteCounter = 3;
+      answerPosibilities = 1;
    } else if (answer.toLowerCase().includes("no")) {
       let negativeFeelings = ["Sorry to hear that! Take good care of yourself!", "I hope you will be ok again soon... See you around!", "That's unfortunate... Take care!"];
       const randomnegativeFeelings = negativeFeelings[Math.floor(Math.random() * negativeFeelings.length)];
       document.getElementById("question").innerHTML = randomnegativeFeelings;
+      muteCounter = 3;
+      answerPosibilities= 2;
    } else {
       muteCounter++;
       console.log(muteCounter);
       let otherAnswer = ["Can you clearly answer to my question please ?", "It's either 'yes or no'!", "Am I a joke to you ???"];
       const randomotherAnswer = otherAnswer[Math.floor(Math.random() * otherAnswer.length)];
       document.getElementById("question").innerHTML = randomotherAnswer;
+      answerPosibilities = 3;
    }
 
    // if the answer is not yes or no 3 times, do this:
    if (muteCounter >= 3) {
-      document.getElementById("question").innerHTML = "Fuck off!";
-      document.getElementById("question").innerHTML = "Hum... You dont want to talk so I'm gonna go! Peace Dummy!";
-      document.getElementById("ans").value = "";
+      if (answerPosibilities === 1) {
+         document.getElementById("question").innerHTML= "Have a nice day!";
+         document.getElementById("ans").value = "";
+         document.getElementById("ans").setAttribute("placeholder", "See you!");
+         document.getElementById("submit").disabled = true;
+      }
+      if (answerPosibilities === 2) {
+         document.getElementById("question").innerHTML= "Hope your day will be better!!!";
+         document.getElementById("ans").value = "";
+         document.getElementById("ans").setAttribute("placeholder", "Cheer up!");
+         document.getElementById("submit").disabled = true;
+      }
+      if (answerPosibilities === 3) {
+         document.getElementById("question").innerHTML = "Hum... You dont want to talk so I'm gonna go! Peace Dummy!";
+         document.getElementById("ans").value = "";
+         document.getElementById("ans").setAttribute("placeholder", "You won! you are muted!");
+         document.getElementById("submit").disabled = true;
+      }
+      
       document.getElementById("ans").setAttribute("disabled", "disabled");
-      document.getElementById("ans").setAttribute("placeholder", "You won! you are muted!");
       document.removeEventListener("keypress");
-      document.getElementById("submit").disabled = true;
    }
    // clear the input field
    document.getElementById("ans").value = "";
 }
-
 
 
