@@ -10,17 +10,21 @@ a {
     font-size: 40px;
 }
 
-h1 {
+h2 {
 font-size: 40px;
 font-weight: 600;
 border: 3px solid #ffffff;
-padding: 2px 60px 5px;
-margin-bottom: 40px;
+padding: 2px 40px 5px;
+margin-bottom: 10px;
+}
+
+h6 {
+    margin: 0px;
+    padding: 0px;
 }
 
 .flex {
     display: flex;
-    justify-content: center;
     flex-flow: column;
     align-items: center;
     height: 100vh;
@@ -31,6 +35,56 @@ margin-bottom: 40px;
     font-weight: 600;
 }
 
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    border: transparent;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 24px;
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 0 0 0 3px black;
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#2c3e4d;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 15px;
+    font-weight: 50;
+    color: #ffffff;
+}
+
+.footer a:link {
+    text-decoration: none;
+}
+
+.footer a:visited {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
 #result {
     font-size: 36px;
     color: #16232E;
@@ -38,15 +92,66 @@ margin-bottom: 40px;
 
 #ans {
     color: #ffffff;
-    padding: 20px;
-    padding-left: 20px;
-    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
     font-size: 26px;
-    background: transparent;
+    background: #2c3e4d;
     border: 0;
+    border-radius: 16px;
 }
 
 #ans:focus {
     outline: 0;
     outline-offset: 0;
 }
+
+#becodelogo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 50px #fff,
+        inset 20px 0 80px #fef,
+        inset -20px 0 80px #eff,
+        inset 20px 0 300px #fef,
+        inset -20px 0 300px #eff,
+        0 0 50px #fff,
+        -10px 0 80px #fef,
+        10px 0 80px #eff;
+    animation: becodeGlow 2s infinite alternate
+}
+
+#becodeImage {
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes becodeGlow{
+    from{
+        box-shadow:
+        inset 0 0 40px #fff,
+        inset 20px 0 70px #eee,
+        inset -20px 0 70px #ccc,
+        inset 20px 0 250px #eee,
+        inset -20px 0 250px #ccc,
+        0 0 40px #fff,
+        -10px 0 70px #eee,
+        10px 0 70px #ccc; 
+    }
+    to{
+        box-shadow:
+        inset 0 0 25px #fff,
+        inset 20px 0 50px #ccc,
+        inset -20px 0 50px #aaa,
+        inset 20px 0 200px #ccc,
+        inset -20px 0 200px #aaa,
+        0 0 25px #fff,
+        -10px 0 50px #ccc,
+        10px 0 50px #aaa;     
+    }
+}	
