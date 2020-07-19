@@ -2,19 +2,24 @@
 
 # 💬 Micro chatbot challenge
 
-- Repository: `Javascript`
-- Type of Challenge:  `Consolidation`
-- Duration: `3 days`
-- Deadline: `17/07/20 H:17PM`
-- Deployment strategy : Planning - Flowchart - HTML/CSS Basic - JavaScript Basic - HTML/CSS Final - JavaScript Final - Small Improvements
-- Team challenge : Resa Quinta, Lap Hoang, Laurent A. Lonchay
-  - frontend: 1 or 2
-  - backend: 1 or 2
-  - project management : 1
+- Type of challenge: **Consolidation of Javascript skills**  
+- Duration : **3 days**  
+- Deadline: **17/07/20 H:17PM**
+- Deployment strategy :
+    - Github page
+- Team challenge: **In groups of three** 
+    - frontend: **1 or 2**
+    - backend: **1 or 2**
+    - project management : **1**
+
+
+| :robot: | *The Team* | :robot: |  
+| :-----: | :-----: | :-----: |
+|   Lap   |  Resa  | Laurent |
 
 ## Mission objectives 
 
-At the end of this challenge you should have improved your:
+At the end of this challenge we should have improved our:
 
 - **JavaScript** skills
 - team skills
@@ -22,7 +27,7 @@ At the end of this challenge you should have improved your:
 
 ## The Mission
 
-**For this challenge, you will create a chatbot!!**   			<img src="https://media.giphy.com/media/l3q2LNVExEP0z9CrS/giphy.gif" style="zoom:40%;" />
+**For this challenge, we had to create a chatbot!!** 
 
 ### Must-have features
 
@@ -44,30 +49,42 @@ At the end of this challenge you should have improved your:
 - add "in progress" animation and timeout to simulate "bot thinking"
 - You can try to make the bot more "real" by having more possible answers to interact with the user.
 
-### Steps
 
-1. Create the repository
-2. Study the request (What & Why ?)
-3. Identify technical challenges (How ?)
-4. UX Prototype ...
+- ## The be&lt;&sol;Bot&gt; Project
 
-## Evaluation criterias
+    - You can see on this picture the first model of the bot :robot:
+    -   ![Capture d’écran de 2020-07-15 15-50-01](https://user-images.githubusercontent.com/62213192/87776480-1ed8e780-c828-11ea-81c0-0d0c39a33005.jpg)
+        You can see on the right side of the picture the structure of the html, it's pretty simple.
 
-| Criteria       | Indicator                                                    | Yes/No |
-| -------------- | ------------------------------------------------------------ | ------ |
-| 1. Is complete | The student has realized all must-have features.             |        |
-|                | There is a published GitHub page available.                  |        |
-|                | The readme is complete                                       |        |
-| 2. Is Correct  | The HTML and CSS pass the W3C Validation tool.               |        |
-|                | The lighthouse test scores 90 at least on Performance, Best Practices, Accessibility and SEO. |        |
-|                | The indentation is perfect                                   |        |
+We were not sure of the color we wanted to use. We decided that we wanted the page to be as simple as possible. So we finaly came up with the idea to use the theme of BeCode : dark blue & white.    
+ -   ![Capture d’écran de 2020-07-15 15-55-17](https://user-images.githubusercontent.com/62213192/87883443-b0528000-ca07-11ea-9edb-eaa4befd16cf.jpg)  
+
+ - ![Capture d’écran de 2020-07-16 12-08-00](https://user-images.githubusercontent.com/62213192/87883508-21923300-ca08-11ea-8e62-6cecc48f87be.jpg)
+
+
+
+Once the theme was set up, we decided to begin our JavaScript. It was by far the hardest part... We searched so much on the internet to find a template or a tutorial that will help us to start the project.  
+
+We finally decided to work as a team and start from scratch. And we are happy with the results that correspond exactly to the requirements. 
+
+- On this shot you can see a little part of the script we wrote :  ![Capture d’écran de 2020-07-16 16-08-48](https://user-images.githubusercontent.com/62213192/87883708-65d20300-ca09-11ea-8227-df7c927f635e.jpg)
+
+
+And voilà! After many our of bugs fixing and changes of last minute here's our [Project](https://resdev27.github.io/Chatbot-project/) !
+
+![Capture d’écran de 2020-07-19 21-50-08](https://user-images.githubusercontent.com/62213192/87883815-45ef0f00-ca0a-11ea-818e-9fae451a6949.png)
+
+There's a second version of the project with an halo animation on the BeCode logo, unfortunatly, the animation didn't complied with the lighthouse standard... Here's an shot of this version. If you want to see the source code of this version, you can found it on the "Resa" branch of this repository.
+
+![Capture d’écran de 2020-07-19 21-50-46](https://user-images.githubusercontent.com/62213192/87883812-44bde200-ca0a-11ea-9fd7-86f4e78637be.png)
+
 
 ## Github Page for Source Code
 
 https://github.com/ResDev27/Chatbot-project
 
 ## Live Link to the ChatBot
-https://resdev27.github.io/Chatbot-project/.
+https://resdev27.github.io/Chatbot-project/
 
 ## LightHouse Test Results
 Performed on desktop results.
@@ -77,5 +94,5 @@ Accessibility: 100. \
 Best practices: 100. \
 SEO: 100.
 
-<img src="/performance.JPG"/>
+![performance](https://user-images.githubusercontent.com/62213192/87883946-2e645600-ca0b-11ea-9994-856bdf4916f0.jpg)
 

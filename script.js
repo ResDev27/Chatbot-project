@@ -22,7 +22,7 @@ function exec(event) {
       if(questionCounter === 1) {
          // get value from input
       let answer = document.getElementById('ans').value;
-      let personalGreeting = [`Hello ${answer}, nice to meet you`, `Hey ${answer}, its a pleasure to meet you`, `Howdy ${answer}, i'm a beBot`];
+      let personalGreeting = [`Hello ${answer}, nice to meet you`, `Hey ${answer}, its a pleasure to meet you`, `Howdy ${answer}, i'm be&lt;&sol;Bot&gt;`];
       const randomPersonal = personalGreeting[Math.floor(Math.random() * personalGreeting.length)];
       document.getElementById("question").innerHTML = randomPersonal; // display input
          //  after 2 seconds askFeeling
