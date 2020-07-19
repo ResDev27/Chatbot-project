@@ -72,9 +72,9 @@ https://resdev27.github.io/Chatbot-project/.
 ## LightHouse Test Results
 Performed on desktop results.
 
-Perfomance : 100. 
-Accessibility: 100. 
-Best practices: 100. 
-SEO: 100. 
+Perfomance : 100.\
+Accessibility: 100. \
+Best practices: 100. \
+SEO: 100. \
 
 
