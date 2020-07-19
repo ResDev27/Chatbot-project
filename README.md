@@ -75,6 +75,6 @@ Performed on desktop results.
 Perfomance : 100.\
 Accessibility: 100. \
 Best practices: 100. \
-SEO: 100. \
+SEO: 100.
 
 
