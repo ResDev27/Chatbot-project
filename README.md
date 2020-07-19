@@ -77,5 +77,5 @@ Accessibility: 100. \
 Best practices: 100. \
 SEO: 100.
 
-<img src="/performance.JPG"/>
+![Perfomance Test](performance.JPG)
 
