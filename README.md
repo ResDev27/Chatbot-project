@@ -77,4 +77,5 @@ Accessibility: 100. \
 Best practices: 100. \
 SEO: 100.
 
+![performance lightouse] (performance.jpg)
 
