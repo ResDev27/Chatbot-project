@@ -53,7 +53,7 @@ At the end of this challenge we should have improved our:
 - ## The be&lt;&sol;Bot&gt; Project
 
     - You can see on this picture the first model of the bot :robot:
-    -   ![Capture d’écran de 2020-07-15 15-50-01](https://user-images.githubusercontent.com/62213192/87776480-1ed8e780-c828-11ea-81c0-0d0c39a33005.jpg)
+    -   ![Capture d’écran de 2020-07-15 15-50-01](https://user-images.githubusercontent.com/62213192/87776480-1ed8e780-c828-11ea-81c0-0d0c39a33005.jpg)  
         You can see on the right side of the picture the structure of the html, it's pretty simple.
 
 We were not sure of the color we wanted to use. We decided that we wanted the page to be as simple as possible. So we finaly came up with the idea to use the theme of BeCode : dark blue & white.    
